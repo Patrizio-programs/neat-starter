@@ -1,6 +1,4 @@
 items:
-  - text: Home
-    url: "#"
   - text: Contact
     url: /contact
   - text: Episodes
