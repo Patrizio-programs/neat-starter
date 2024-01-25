@@ -1,9 +1,7 @@
 ---
-title: This is my first post
-description: Capitalize on low hanging fruit to identify a ballpark value added
-  activity to beta test. Override the digital divide with additional
-  clickthroughs from DevOps.
-author: Surjith S M
+title: Episode 1:Introduccion | La historia de Dembow
+description: What this podcast hopes to acheive...
+author: Simply Spanish
 date: 2020-09-01
 tags:
   - left
