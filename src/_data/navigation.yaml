@@ -1,5 +1,5 @@
 items:
   - text: Contact
-    url: /contact
+    url: /contact/
   - text: Episodes
     url: /blog
