@@ -3,17 +3,45 @@ layout: default
 prism: true
 ---
 
-<div style="max-width: 56rem; margin-top: 1.5rem; padding: 1.5rem;">
-    <div style="padding-bottom: 1.25rem; margin-bottom: 1.25rem; border-bottom: 1px solid #f7fafc;">
-        <h1 style="font-weight: bold; font-size: 3rem;">{{title}}</h1>
-        <p style="text-align: center; font-size: 1rem; line-height: 1.5rem; font-weight: medium; color: #718096;">
+<style>
+    .container {
+        max-width: 56rem;
+        margin-top: 1.5rem;
+        padding: 1.5rem;
+    }
+    .innerDiv {
+        padding-bottom: 1.25rem;
+        margin-bottom: 1.25rem;
+        border-bottom: 1px solid #f7fafc;
+    }
+    .title {
+        font-weight: bold;
+        font-size: 3rem;
+    }
+    .info {
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: medium;
+        color: #718096;
+    }
+    .article {
+        margin: 1rem auto;
+        width: 90%;
+    }
+</style>
+
+<div class="container">
+    <div class="innerDiv">
+        <h1 class="title">{{title}}</h1>
+        <p class="info">
             <time> {{ date | readableDate }}
                 by
                 <a>{{ author }}</a>
             </time>
         </p>
     </div>
-    <article style="margin: 1rem auto; width: 90%;">
+    <article class="article">
         {{ content | safe }}
     </article>
 </div>
