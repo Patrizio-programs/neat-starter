@@ -3,19 +3,17 @@ layout: default
 prism: true
 ---
 
-<div class="container max-w-4xl mt-6  px-6">
-    <div class="pb-5 mb-5 border-b border-gray-100">
-        <h1 class="font-bold text-5xl">{{title}}</h1>
-        <p class="text-center text-base leading-6 font-medium text-gray-500">
+<div style="max-width: 56rem; margin-top: 1.5rem; padding: 1.5rem;">
+    <div style="padding-bottom: 1.25rem; margin-bottom: 1.25rem; border-bottom: 1px solid #f7fafc;">
+        <h1 style="font-weight: bold; font-size: 3rem;">{{title}}</h1>
+        <p style="text-align: center; font-size: 1rem; line-height: 1.5rem; font-weight: medium; color: #718096;">
             <time> {{ date | readableDate }}
                 by
                 <a>{{ author }}</a>
-
             </time>
         </p>
-
     </div>
-    <article class="prose lg:prose-xl my-4 mx-auto">
-        {{ content | safe }}</article>
-
+    <article style="margin: 1rem auto; width: 90%;">
+        {{ content | safe }}
+    </article>
 </div>
